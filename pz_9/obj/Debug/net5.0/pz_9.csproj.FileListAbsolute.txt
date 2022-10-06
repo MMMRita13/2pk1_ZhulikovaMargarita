@@ -1,0 +1,16 @@
+C:\Users\MSI\source\repos\pz_9\bin\Debug\net5.0\pz_9.exe
+C:\Users\MSI\source\repos\pz_9\bin\Debug\net5.0\pz_9.deps.json
+C:\Users\MSI\source\repos\pz_9\bin\Debug\net5.0\pz_9.runtimeconfig.json
+C:\Users\MSI\source\repos\pz_9\bin\Debug\net5.0\pz_9.runtimeconfig.dev.json
+C:\Users\MSI\source\repos\pz_9\bin\Debug\net5.0\pz_9.dll
+C:\Users\MSI\source\repos\pz_9\bin\Debug\net5.0\pz_9.pdb
+C:\Users\MSI\source\repos\pz_9\obj\Debug\net5.0\pz_9.csproj.AssemblyReference.cache
+C:\Users\MSI\source\repos\pz_9\obj\Debug\net5.0\pz_9.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\MSI\source\repos\pz_9\obj\Debug\net5.0\pz_9.AssemblyInfoInputs.cache
+C:\Users\MSI\source\repos\pz_9\obj\Debug\net5.0\pz_9.AssemblyInfo.cs
+C:\Users\MSI\source\repos\pz_9\obj\Debug\net5.0\pz_9.csproj.CoreCompileInputs.cache
+C:\Users\MSI\source\repos\pz_9\obj\Debug\net5.0\pz_9.dll
+C:\Users\MSI\source\repos\pz_9\obj\Debug\net5.0\refint\pz_9.dll
+C:\Users\MSI\source\repos\pz_9\obj\Debug\net5.0\pz_9.pdb
+C:\Users\MSI\source\repos\pz_9\obj\Debug\net5.0\pz_9.genruntimeconfig.cache
+C:\Users\MSI\source\repos\pz_9\obj\Debug\net5.0\ref\pz_9.dll
