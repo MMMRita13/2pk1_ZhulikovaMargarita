@@ -1,0 +1,14 @@
+C:\Users\zhulikova.ma1657\source\repos\pz13\bin\Debug\netcoreapp3.1\pz13.exe
+C:\Users\zhulikova.ma1657\source\repos\pz13\bin\Debug\netcoreapp3.1\pz13.deps.json
+C:\Users\zhulikova.ma1657\source\repos\pz13\bin\Debug\netcoreapp3.1\pz13.runtimeconfig.json
+C:\Users\zhulikova.ma1657\source\repos\pz13\bin\Debug\netcoreapp3.1\pz13.runtimeconfig.dev.json
+C:\Users\zhulikova.ma1657\source\repos\pz13\bin\Debug\netcoreapp3.1\pz13.dll
+C:\Users\zhulikova.ma1657\source\repos\pz13\bin\Debug\netcoreapp3.1\pz13.pdb
+C:\Users\zhulikova.ma1657\source\repos\pz13\obj\Debug\netcoreapp3.1\pz13.csproj.AssemblyReference.cache
+C:\Users\zhulikova.ma1657\source\repos\pz13\obj\Debug\netcoreapp3.1\pz13.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zhulikova.ma1657\source\repos\pz13\obj\Debug\netcoreapp3.1\pz13.AssemblyInfoInputs.cache
+C:\Users\zhulikova.ma1657\source\repos\pz13\obj\Debug\netcoreapp3.1\pz13.AssemblyInfo.cs
+C:\Users\zhulikova.ma1657\source\repos\pz13\obj\Debug\netcoreapp3.1\pz13.csproj.CoreCompileInputs.cache
+C:\Users\zhulikova.ma1657\source\repos\pz13\obj\Debug\netcoreapp3.1\pz13.dll
+C:\Users\zhulikova.ma1657\source\repos\pz13\obj\Debug\netcoreapp3.1\pz13.pdb
+C:\Users\zhulikova.ma1657\source\repos\pz13\obj\Debug\netcoreapp3.1\pz13.genruntimeconfig.cache
