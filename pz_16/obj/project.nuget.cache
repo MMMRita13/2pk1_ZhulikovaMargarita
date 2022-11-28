@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "j7sQD0XLFN1EoCDrAFrf1XP7WoJyiZBNCRNoBghN6kpAjw/I3Zup/6/kM5bgnj5NYubaeyRCs0Q+LryToIk41w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\zhulikova.ma1657\\source\\repos\\pz_16\\pz_16.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\zhulikova.ma1657\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.28\\microsoft.netcore.app.host.win-x64.3.1.28.nupkg.sha512",
+    "C:\\Users\\zhulikova.ma1657\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\3.1.10\\microsoft.aspnetcore.app.ref.3.1.10.nupkg.sha512"
+  ],
+  "logs": []
+}
