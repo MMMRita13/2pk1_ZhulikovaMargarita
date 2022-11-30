@@ -1,0 +1,14 @@
+C:\Users\zhulikova.ma1657\source\repos\console.igra\obj\Debug\netcoreapp3.1\console.igra.csproj.AssemblyReference.cache
+C:\Users\zhulikova.ma1657\source\repos\console.igra\obj\Debug\netcoreapp3.1\console.igra.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zhulikova.ma1657\source\repos\console.igra\obj\Debug\netcoreapp3.1\console.igra.AssemblyInfoInputs.cache
+C:\Users\zhulikova.ma1657\source\repos\console.igra\obj\Debug\netcoreapp3.1\console.igra.AssemblyInfo.cs
+C:\Users\zhulikova.ma1657\source\repos\console.igra\obj\Debug\netcoreapp3.1\console.igra.csproj.CoreCompileInputs.cache
+C:\Users\zhulikova.ma1657\source\repos\console.igra\bin\Debug\netcoreapp3.1\console.igra.exe
+C:\Users\zhulikova.ma1657\source\repos\console.igra\bin\Debug\netcoreapp3.1\console.igra.deps.json
+C:\Users\zhulikova.ma1657\source\repos\console.igra\bin\Debug\netcoreapp3.1\console.igra.runtimeconfig.json
+C:\Users\zhulikova.ma1657\source\repos\console.igra\bin\Debug\netcoreapp3.1\console.igra.runtimeconfig.dev.json
+C:\Users\zhulikova.ma1657\source\repos\console.igra\bin\Debug\netcoreapp3.1\console.igra.dll
+C:\Users\zhulikova.ma1657\source\repos\console.igra\bin\Debug\netcoreapp3.1\console.igra.pdb
+C:\Users\zhulikova.ma1657\source\repos\console.igra\obj\Debug\netcoreapp3.1\console.igra.dll
+C:\Users\zhulikova.ma1657\source\repos\console.igra\obj\Debug\netcoreapp3.1\console.igra.pdb
+C:\Users\zhulikova.ma1657\source\repos\console.igra\obj\Debug\netcoreapp3.1\console.igra.genruntimeconfig.cache
