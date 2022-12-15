@@ -1,0 +1,14 @@
+C:\Users\zhulikova.ma1657\source\repos\pz_18\bin\Debug\netcoreapp3.1\pz_18.exe
+C:\Users\zhulikova.ma1657\source\repos\pz_18\bin\Debug\netcoreapp3.1\pz_18.deps.json
+C:\Users\zhulikova.ma1657\source\repos\pz_18\bin\Debug\netcoreapp3.1\pz_18.runtimeconfig.json
+C:\Users\zhulikova.ma1657\source\repos\pz_18\bin\Debug\netcoreapp3.1\pz_18.runtimeconfig.dev.json
+C:\Users\zhulikova.ma1657\source\repos\pz_18\bin\Debug\netcoreapp3.1\pz_18.dll
+C:\Users\zhulikova.ma1657\source\repos\pz_18\bin\Debug\netcoreapp3.1\pz_18.pdb
+C:\Users\zhulikova.ma1657\source\repos\pz_18\obj\Debug\netcoreapp3.1\pz_18.csproj.AssemblyReference.cache
+C:\Users\zhulikova.ma1657\source\repos\pz_18\obj\Debug\netcoreapp3.1\pz_18.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\zhulikova.ma1657\source\repos\pz_18\obj\Debug\netcoreapp3.1\pz_18.AssemblyInfoInputs.cache
+C:\Users\zhulikova.ma1657\source\repos\pz_18\obj\Debug\netcoreapp3.1\pz_18.AssemblyInfo.cs
+C:\Users\zhulikova.ma1657\source\repos\pz_18\obj\Debug\netcoreapp3.1\pz_18.csproj.CoreCompileInputs.cache
+C:\Users\zhulikova.ma1657\source\repos\pz_18\obj\Debug\netcoreapp3.1\pz_18.dll
+C:\Users\zhulikova.ma1657\source\repos\pz_18\obj\Debug\netcoreapp3.1\pz_18.pdb
+C:\Users\zhulikova.ma1657\source\repos\pz_18\obj\Debug\netcoreapp3.1\pz_18.genruntimeconfig.cache
