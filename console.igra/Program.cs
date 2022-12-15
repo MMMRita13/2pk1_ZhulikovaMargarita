@@ -1,5 +1,6 @@
 ﻿using System;
 
+
 namespace console.igra
 {
     internal class Program
@@ -64,8 +65,8 @@ namespace console.igra
             
             
             Console.WriteLine("Здоровье игрока = " + igrok_HP + " " + "Сила = " + igrok_power);
+            Console.WriteLine("Здоровье врага = " + vrag_HP + " " + "Сила = " + vrag_power);
 
-             
             for (int i = 0; i < carta.GetLength(0); i++)
             {
                 for (int j = 0; j < carta.GetLength(1); j++)
@@ -106,10 +107,10 @@ namespace console.igra
             SaveState();
         }
         public static Array UpdateMap()
-        {//обновление карты после действий}
+        {//обновление карты после действий
             Console.Clear();
             carta[x, y] = igrok;
-            Console.WriteLine("Здоровье игрока"+igrok_HP + "Сила = " + igrok_power);
+            Console.WriteLine("Здоровье игрока = "+igrok_HP + " " + "Сила = " + igrok_power);
 
             Console.WriteLine("Общее количество шагов:" + go);
             if (buffer_B < 5)
@@ -128,10 +129,10 @@ namespace console.igra
 
         }
         public static Array Move(ref int x, ref int y)
-        {//реализация перемещения на нужную ячейку в связи с выбранным направлением direction, подсчет шагов}
+        {//реализация перемещения на нужную ячейку в связи с выбранным направлением direction, подсчет шагов
             ConsoleKeyInfo direction = Console.ReadKey();
             go = go + 1;
-            buffer_B= buffer_B + 1;
+            buffer_B= buffer_B + 1; 
             switch(direction.Key)
             {
                 case ConsoleKey.W:
@@ -158,7 +159,7 @@ namespace console.igra
             return (carta);
         }
         public static Array Fight()
-        {//обмен ударами игрока и врага до полной потери здоровья одним из них}
+        {//обмен ударами игрока и врага до полной потери здоровья одним из них
             vrag_HP = 15;
             for(int i = 0; igrok_HP !=0 & vrag_HP!=0; i++)
             {
@@ -169,25 +170,30 @@ namespace console.igra
                     break;
                 }
                 igrok_HP = igrok_HP - vrag_power;
-                if (igrok_HP == 0 | igrok_HP<0)
+                if (igrok_HP <= 0)
                 {
                     Console.WriteLine("Вы умерли!");
                 }
             }
             kolvo_vrag = kolvo_vrag - 1;
             return (carta);
+            
         }
         public static void Healing()
-        {// лечение}
+        {// лечение
             igrok_HP = 30;
         }
         public static void Buff()
-        {//увеличение силы}
+        {//увеличение силы
             buffer_B = 0;
             igrok_power = 10;
         }
-        public static void SaveState()
-        {//сохранение в файл}
+        public static void SaveState(/*string igrok, int igrok_HP = 30*/)
+        {//сохранение в файл
+            //FileStream file = new FileStream(@"D:\work\file.txt", FileMode.Create);
+            //StreamWriter write = new StreamWriter(file);
+            //write.WriteLine("HP игрока = " + igrok_HP);
+            //write.Close();
         }
     }
 }
