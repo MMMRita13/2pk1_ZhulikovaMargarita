@@ -1,0 +1,13 @@
+C:\Users\zhulikova.ma1657\source\repos\рz_20\рz_20\bin\Debug\netcoreapp3.1\рz_20.exe
+C:\Users\zhulikova.ma1657\source\repos\рz_20\рz_20\bin\Debug\netcoreapp3.1\рz_20.deps.json
+C:\Users\zhulikova.ma1657\source\repos\рz_20\рz_20\bin\Debug\netcoreapp3.1\рz_20.runtimeconfig.json
+C:\Users\zhulikova.ma1657\source\repos\рz_20\рz_20\bin\Debug\netcoreapp3.1\рz_20.runtimeconfig.dev.json
+C:\Users\zhulikova.ma1657\source\repos\рz_20\рz_20\bin\Debug\netcoreapp3.1\рz_20.dll
+C:\Users\zhulikova.ma1657\source\repos\рz_20\рz_20\bin\Debug\netcoreapp3.1\рz_20.pdb
+C:\Users\zhulikova.ma1657\source\repos\рz_20\рz_20\obj\Debug\netcoreapp3.1\рz_20.csprojAssemblyReference.cache
+C:\Users\zhulikova.ma1657\source\repos\рz_20\рz_20\obj\Debug\netcoreapp3.1\рz_20.AssemblyInfoInputs.cache
+C:\Users\zhulikova.ma1657\source\repos\рz_20\рz_20\obj\Debug\netcoreapp3.1\рz_20.AssemblyInfo.cs
+C:\Users\zhulikova.ma1657\source\repos\рz_20\рz_20\obj\Debug\netcoreapp3.1\рz_20.csproj.CoreCompileInputs.cache
+C:\Users\zhulikova.ma1657\source\repos\рz_20\рz_20\obj\Debug\netcoreapp3.1\рz_20.dll
+C:\Users\zhulikova.ma1657\source\repos\рz_20\рz_20\obj\Debug\netcoreapp3.1\рz_20.pdb
+C:\Users\zhulikova.ma1657\source\repos\рz_20\рz_20\obj\Debug\netcoreapp3.1\рz_20.genruntimeconfig.cache
