@@ -1,0 +1,15 @@
+C:\Users\Маргарита\source\repos\2pk1_ZhulikovaMargarita\pz_21\bin\Debug\net6.0\pz_21.exe
+C:\Users\Маргарита\source\repos\2pk1_ZhulikovaMargarita\pz_21\bin\Debug\net6.0\pz_21.deps.json
+C:\Users\Маргарита\source\repos\2pk1_ZhulikovaMargarita\pz_21\bin\Debug\net6.0\pz_21.runtimeconfig.json
+C:\Users\Маргарита\source\repos\2pk1_ZhulikovaMargarita\pz_21\bin\Debug\net6.0\pz_21.dll
+C:\Users\Маргарита\source\repos\2pk1_ZhulikovaMargarita\pz_21\bin\Debug\net6.0\pz_21.pdb
+C:\Users\Маргарита\source\repos\2pk1_ZhulikovaMargarita\pz_21\obj\Debug\net6.0\pz_21.csproj.AssemblyReference.cache
+C:\Users\Маргарита\source\repos\2pk1_ZhulikovaMargarita\pz_21\obj\Debug\net6.0\pz_21.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Маргарита\source\repos\2pk1_ZhulikovaMargarita\pz_21\obj\Debug\net6.0\pz_21.AssemblyInfoInputs.cache
+C:\Users\Маргарита\source\repos\2pk1_ZhulikovaMargarita\pz_21\obj\Debug\net6.0\pz_21.AssemblyInfo.cs
+C:\Users\Маргарита\source\repos\2pk1_ZhulikovaMargarita\pz_21\obj\Debug\net6.0\pz_21.csproj.CoreCompileInputs.cache
+C:\Users\Маргарита\source\repos\2pk1_ZhulikovaMargarita\pz_21\obj\Debug\net6.0\pz_21.dll
+C:\Users\Маргарита\source\repos\2pk1_ZhulikovaMargarita\pz_21\obj\Debug\net6.0\refint\pz_21.dll
+C:\Users\Маргарита\source\repos\2pk1_ZhulikovaMargarita\pz_21\obj\Debug\net6.0\pz_21.pdb
+C:\Users\Маргарита\source\repos\2pk1_ZhulikovaMargarita\pz_21\obj\Debug\net6.0\pz_21.genruntimeconfig.cache
+C:\Users\Маргарита\source\repos\2pk1_ZhulikovaMargarita\pz_21\obj\Debug\net6.0\ref\pz_21.dll
