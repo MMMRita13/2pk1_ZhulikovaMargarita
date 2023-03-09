@@ -38,7 +38,7 @@ namespace pz_21
         static void Main(string[] args)
         {
 
-            var product = PrintInfo();
+            int product = PrintInfo();
             GetFullPrice(product);
         }
     }

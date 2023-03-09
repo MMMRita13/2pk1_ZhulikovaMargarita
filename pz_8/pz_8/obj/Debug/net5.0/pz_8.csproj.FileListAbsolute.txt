@@ -14,3 +14,6 @@ C:\Users\MSI\source\repos\pz_8\pz_8\obj\Debug\net5.0\refint\pz_8.dll
 C:\Users\MSI\source\repos\pz_8\pz_8\obj\Debug\net5.0\pz_8.pdb
 C:\Users\MSI\source\repos\pz_8\pz_8\obj\Debug\net5.0\pz_8.genruntimeconfig.cache
 C:\Users\MSI\source\repos\pz_8\pz_8\obj\Debug\net5.0\ref\pz_8.dll
+C:\Users\Маргарита\Source\Repos\2pk1_ZhulikovaMargarita\pz_8\pz_8\obj\Debug\net5.0\pz_8.dll
+C:\Users\Маргарита\Source\Repos\2pk1_ZhulikovaMargarita\pz_8\pz_8\obj\Debug\net5.0\refint\pz_8.dll
+C:\Users\Маргарита\Source\Repos\2pk1_ZhulikovaMargarita\pz_8\pz_8\obj\Debug\net5.0\pz_8.pdb

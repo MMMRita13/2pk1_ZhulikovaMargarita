@@ -12,3 +12,5 @@ C:\Users\zhulikova.ma1657\source\repos\pz_15\obj\Debug\netcoreapp3.1\pz_15.cspro
 C:\Users\zhulikova.ma1657\source\repos\pz_15\obj\Debug\netcoreapp3.1\pz_15.dll
 C:\Users\zhulikova.ma1657\source\repos\pz_15\obj\Debug\netcoreapp3.1\pz_15.pdb
 C:\Users\zhulikova.ma1657\source\repos\pz_15\obj\Debug\netcoreapp3.1\pz_15.genruntimeconfig.cache
+C:\Users\Маргарита\Source\Repos\2pk1_ZhulikovaMargarita\pz_15\obj\Debug\netcoreapp3.1\pz_15.dll
+C:\Users\Маргарита\Source\Repos\2pk1_ZhulikovaMargarita\pz_15\obj\Debug\netcoreapp3.1\pz_15.pdb
