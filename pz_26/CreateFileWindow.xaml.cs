@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace pz_26
 {
     /// <summary>
-    /// Логика взаимодействия для Window1.xaml
+    /// Логика взаимодействия для CreateFileWindow.xaml
     /// </summary>
-    public partial class Window1 : Window
+    public partial class CreateFileWindow : Window
     {
-        public Window1()
+        public CreateFileWindow()
         {
             InitializeComponent();
         }

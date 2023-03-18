@@ -45,14 +45,14 @@ namespace pz_26
 
         static void MenuItem_Click(object sender, RoutedEventArgs e)
         {
-            FileStream file1 = new FileStream("C:\\Users\\Маргарита\\2pk1_ZhulikovaMargarita\\pz_26\\data\\", FileMode.Create); //создание файла
-            StreamWriter writer1 = new StreamWriter(file1);
-            writer1.Write("");
-            writer1.Close();
-            FileStream file2 = new FileStream("C:\\Users\\Маргарита\\2pk1_ZhulikovaMargarita\\pz_26\\data\\", FileMode.Open); //открытие файла
-            StreamWriter writer2 = new StreamWriter(file2);
-            writer2.Write("");
-            writer2.Close();
+            //FileStream file1 = new FileStream("C:\\Users\\Маргарита\\2pk1_ZhulikovaMargarita\\pz_26\\data\\", FileMode.Create); //создание файла
+            //StreamWriter writer1 = new StreamWriter(file1);
+            //writer1.Write("");
+            //writer1.Close();
+            //FileStream file2 = new FileStream("C:\\Users\\Маргарита\\2pk1_ZhulikovaMargarita\\pz_26\\data\\", FileMode.Open); //открытие файла
+            //StreamWriter writer2 = new StreamWriter(file2);
+            //writer2.Write("");
+            //writer2.Close();
 
         }
         private int GetLineIndexFromCharacterIndex()

@@ -27,12 +27,12 @@ Click="escButton_Click" />
 		<StackPanel Margin="0,0,0,363"  >
 			<Menu Height="25" >
 				<MenuItem Header="Файл" Click="MenuItem_Click">
-					<MenuItem x:Name="newFileMenuItem" Header="new file" Click="newFileMenuItem_Click"></MenuItem>
-					<MenuItem x:Name="openFileMenuItem" Header="open file"></MenuItem>
+					<MenuItem x:Name="newFileMenuItem" Header="Новый" Click="newFileMenuItem_Click"></MenuItem>
+					<MenuItem x:Name="openFileMenuItem" Header="Открыть"></MenuItem>
 					<MenuItem Header="Удалить"></MenuItem>
 					<MenuItem Header="Сохранить" ></MenuItem>
 				</MenuItem>
-				<MenuItem Header="О программе" ></MenuItem>
+                <MenuItem x:Name="aboutFileMenuItem" Header="О программе" ></MenuItem>
 			</Menu>
 			<WrapPanel MinHeight="35" >
 				<Button x:Name="acceptButton1"  Width="30" Height="30" ToolTip="Курсив" >
