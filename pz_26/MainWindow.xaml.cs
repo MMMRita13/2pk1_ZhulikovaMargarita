@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -14,7 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace pz_26._1
+namespace pz_26
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml
@@ -46,11 +45,11 @@ namespace pz_26._1
 
         static void MenuItem_Click(object sender, RoutedEventArgs e)
         {
-            FileStream file1 = new FileStream("C:\\Users\\Маргарита\\2pk1_ZhulikovaMargarita\\pz_26.1\\data\\", FileMode.Create); //создание файла
+            FileStream file1 = new FileStream("C:\\Users\\Маргарита\\2pk1_ZhulikovaMargarita\\pz_26\\data\\", FileMode.Create); //создание файла
             StreamWriter writer1 = new StreamWriter(file1);
             writer1.Write("");
             writer1.Close();
-            FileStream file2 = new FileStream("C:\\Users\\Маргарита\\2pk1_ZhulikovaMargarita\\pz_26.1\\data\\", FileMode.Open); //открытие файла
+            FileStream file2 = new FileStream("C:\\Users\\Маргарита\\2pk1_ZhulikovaMargarita\\pz_26\\data\\", FileMode.Open); //открытие файла
             StreamWriter writer2 = new StreamWriter(file2);
             writer2.Write("");
             writer2.Close();
@@ -67,7 +66,11 @@ namespace pz_26._1
             //int col = textField.CaretIndex - textField.GetLineIndexFromCharacterIndex(row);
             //cursorPosition.Text = $"строка: {row + 1} столбец: {col + 1}";
         }
-
-
+        private void newFileMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            CreateFileWindow createFileWindow = new CreateFileWindow();
+            if (createFileWindow.ShowDialog() == true)
+                _ = createFileWindow.FileName;
+        }
     }
 }

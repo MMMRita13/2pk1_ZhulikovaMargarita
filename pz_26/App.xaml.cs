@@ -6,7 +6,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows;
 
-namespace pz_26._1
+namespace pz_26
 {
     /// <summary>
     /// Interaction logic for App.xaml
