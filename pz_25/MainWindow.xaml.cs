@@ -25,9 +25,6 @@ namespace pz_25
         {
             InitializeComponent();
         }
-        double a, b;
-        
-
         private void press8Button_Click(object sender, RoutedEventArgs e)
         {
             infoTextBlock.Text += "8";
@@ -80,25 +77,25 @@ namespace pz_25
 
         private void pressplusButton_Click(object sender, RoutedEventArgs e)
         {
-            a = double.Parse(infoTextBlock.Text);  
+            
             infoTextBlock.Text += "+";
         }
 
         private void pressminusButton_Click(object sender, RoutedEventArgs e)
         {
-            a = double.Parse(infoTextBlock.Text);
+            
             infoTextBlock.Text += "-";
-          
+
         }
 
         private void pressdelButton_Click(object sender, RoutedEventArgs e)
         {
-            a = double.Parse(infoTextBlock.Text);
+            
             infoTextBlock.Text += "/";
         }
         private void pressymnozhButton_Click_1(object sender, RoutedEventArgs e)
         {
-            a = double.Parse(infoTextBlock.Text);
+            
             infoTextBlock.Text += "*";
         }
 
@@ -109,23 +106,63 @@ namespace pz_25
         }
         private double Calculator(string expression)
         {
-            //double c = Convert.ToDouble(expression);
-            string pattern = @"\d";
-            Regex regex= new Regex(pattern);
-            switch (Regex.IsMatch(infoTextBlock.Text, pattern))
-            {
-                case true:
-                    
-                    break;
-                case false:
-                    
-                    
-                    break;
-                
-            }
-            return 0;
-        }
+            // Преобразуем выражение в массив символов
+            char[] tokens = expression.ToCharArray();
 
-       
+            // Создаем массив для хранения чисел и операций
+            double[] numbers = new double[expression.Length];
+            char[] operations = new char[expression.Length];
+
+            int numIndex = 0;
+            int opIndex = 0;
+
+            // Парсим выражение, записываем числа и операции в массивы
+            for (int i = 0; i < tokens.Length; i++)
+            {
+                if (tokens[i] == ' ')
+                    continue;
+                if (Char.IsDigit(tokens[i]))
+                {
+                    string numStr = "";
+                    while (i < tokens.Length && (Char.IsDigit(tokens[i]) || tokens[i] == '.'))
+                    {
+                        numStr += tokens[i].ToString();
+                        i++;
+                    }
+                    i--;
+                    numbers[numIndex] = double.Parse(numStr);
+                    numIndex++;
+                }
+                else
+                {
+                    operations[opIndex] = tokens[i];
+                    opIndex++;
+                }
+            }
+
+            // Вычисляем выражение
+            double result = numbers[0];
+            for (int i = 0; i < opIndex; i++)
+            {
+                char op = operations[i];
+                double num = numbers[i + 1];
+                switch (op)
+                {
+                    case '+':
+                        result += num;
+                        break;
+                    case '-':
+                        result -= num;
+                        break;
+                    case '*':
+                        result *= num;
+                        break;
+                    case '/':
+                        result /= num;
+                        break;
+                }
+            }
+            return result;
+        }
     }
 }
