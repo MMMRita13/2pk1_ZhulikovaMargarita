@@ -1,0 +1,32 @@
+﻿<Window x:Class="excursion_app.AddItemWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:excursion_app"
+        mc:Ignorable="d"
+        Title="AddItemWindow" Height="357" Width="300">
+    <StackPanel HorizontalAlignment="Center">
+        <Label Content="ФИО" HorizontalAlignment="Center"/>
+        <TextBox x:Name="fioTB" MinWidth="200"/>
+
+        <Label Content="Паспортные данные" HorizontalAlignment="Center"/>
+        <TextBox x:Name="pasportTB" MinWidth="200"/>
+
+        <Label Content="Исходная точка назначения маршрута" HorizontalAlignment="Center"/>
+        <TextBox x:Name="otkydaTB" MinWidth="200"/>
+
+        <Label Content="Конечная точка назначения маршрута" HorizontalAlignment="Center"/>
+        <TextBox x:Name="kydaTB" MinWidth="200"/>
+
+        <Label Content="Участники тура" HorizontalAlignment="Center"/>
+        <TextBox x:Name="peopleTB" MinWidth="200"/>
+
+        <Label Content="Стоимость тура" HorizontalAlignment="Center"/>
+        <TextBox x:Name="moneyTB" MinWidth="200"/>
+        <Label Content=""/>
+        <Button x:Name="addItemButton" Content="Добавить" Click="addItemButton_Click"  Height="25" RenderTransformOrigin="0.522,2.208"/>
+        
+
+    </StackPanel>
+</Window>

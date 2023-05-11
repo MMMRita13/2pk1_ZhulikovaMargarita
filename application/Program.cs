@@ -25,13 +25,13 @@ namespace pplication
 
             while (true)
             {
-                Console.WriteLine("\n1. Add order");
-                Console.WriteLine("2. Edit order");
-                Console.WriteLine("3. Delete order");
-                Console.WriteLine("4. View all orders");
-                Console.WriteLine("5. Save and exit");
+                Console.WriteLine("\n1. Добавить заявку");
+                Console.WriteLine("2. Редактировать заявку");
+                Console.WriteLine("3. Удалить заявку");
+                Console.WriteLine("4. Посмотреть все заявки");
+                Console.WriteLine("5. Сохранить и выйти");
 
-                Console.Write("\nEnter your choice: ");
+                Console.Write("\nВведите свой выбор: ");
                 int choice = int.Parse(Console.ReadLine());
 
                 switch (choice)
@@ -52,7 +52,7 @@ namespace pplication
                         SaveAndExit();
                         break;
                     default:
-                        Console.WriteLine("Invalid choice");
+                        Console.WriteLine("\nОшибка, введите цифру из заданного списка");
                         break;
                 }
             }
@@ -60,80 +60,80 @@ namespace pplication
 
         private static void AddOrder()
         {
-            Console.WriteLine("\nEnter order details:");
+            Console.WriteLine("\nВведите данные заказа:");
 
             TourOrder order = new TourOrder();
-            order.CustomerName = GetStringInput("Customer name");
-            order.Passport = GetStringInput("Passport");
-            order.StartPoint = GetStringInput("Start point");
-            order.EndPoint = GetStringInput("End point");
+            order.CustomerName = GetStringInput("ФИО заказчика");
+            order.Passport = GetStringInput("Паспортные данные заказчика");
+            order.StartPoint = GetStringInput("Исходная точка назначения маршрута");
+            order.EndPoint = GetStringInput("Конечная точка назначения маршрута");
             order.AdditionalParticipants = GetAdditionalParticipants();
-            order.Price = GetDecimalInput("Price");
+            order.Price = GetDecimalInput("Стоимость тура");
 
             orders.Add(order);
 
-            Console.WriteLine("Order added successfully");
+            Console.WriteLine("Заказ добавлен успешно");
         }
 
         private static void EditOrder()
         {
-            Console.Write("\nEnter order ID to edit: ");
+            Console.Write("\nВведите идентификатор заказа для редактирования: ");
             int id = int.Parse(Console.ReadLine());
 
             if (id >= 1 && id <= orders.Count)
             {
-                Console.WriteLine("\nEnter new order details:");
+                Console.WriteLine("\nВведите новые данные заказа: ");
 
                 TourOrder order = orders[id - 1];
-                order.CustomerName = GetStringInput("Customer name", order.CustomerName);
-                order.Passport = GetStringInput("Passport", order.Passport);
-                order.StartPoint = GetStringInput("Start point", order.StartPoint);
-                order.EndPoint = GetStringInput("End point", order.EndPoint);
+                order.CustomerName = GetStringInput("ФИО заказчика", order.CustomerName);
+                order.Passport = GetStringInput("Паспортные данные заказчика", order.Passport);
+                order.StartPoint = GetStringInput("Исходная точка назначения маршрута", order.StartPoint);
+                order.EndPoint = GetStringInput("Конечная точка назначения маршрута", order.EndPoint);
                 order.AdditionalParticipants = GetAdditionalParticipants(order.AdditionalParticipants);
-                order.Price = GetDecimalInput("Price", order.Price);
+                order.Price = GetDecimalInput("Стоимость тура", order.Price);
 
-                Console.WriteLine("Order updated successfully");
+                Console.WriteLine("Заказ успешно обновлен");
             }
             else
             {
-                Console.WriteLine("Invalid order ID");
+                Console.WriteLine("Неверный идентификатор заказа");
             }
         }
 
         private static void DeleteOrder()
         {
-            Console.Write("\nEnter order ID to delete: ");
+            Console.Write("\nВведите идентификатор заказа для удаления: ");
             int id = int.Parse(Console.ReadLine());
 
             if (id >= 1 && id <= orders.Count)
             {
                 orders.RemoveAt(id - 1);
-                Console.WriteLine("Order deleted successfully");
+                Console.WriteLine("Заказ успешно удален");
             }
             else
             {
-                Console.WriteLine("Invalid order ID");
+                Console.WriteLine("Неверный идентификатор заказа");
             }
         }
 
         private static void ViewOrders()
         {
-            Console.WriteLine("\nAll orders:");
+            Console.WriteLine("\nВсе заказы:");
 
             for (int i = 0; i < orders.Count; i++)
             {
-                Console.WriteLine($"\nOrder ID: {i + 1}");
-                Console.WriteLine($"Customer name: {orders[i].CustomerName}");
-                Console.WriteLine($"Passport: {orders[i].Passport}");
-                Console.WriteLine($"Start point: {orders[i].StartPoint}");
-                Console.WriteLine($"End point: {orders[i].EndPoint}");
+                Console.WriteLine($"\nИдентификатор заказа: {i + 1}");
+                Console.WriteLine($"ФИО заказчика: {orders[i].CustomerName}");
+                Console.WriteLine($"Паспортные данные заказчика: {orders[i].Passport}");
+                Console.WriteLine($"Исходная точка назначения маршрута: {orders[i].StartPoint}");
+                Console.WriteLine($"Конечная точка назначения маршрута: {orders[i].EndPoint}");
 
                 if (orders[i].AdditionalParticipants != null && orders[i].AdditionalParticipants.Count > 0)
                 {
-                    Console.WriteLine($"Additional participants: {string.Join(", ", orders[i].AdditionalParticipants)}");
+                    Console.WriteLine($"Дополнительные участники тура: {string.Join(", ", orders[i].AdditionalParticipants)}");
                 }
 
-                Console.WriteLine($"Price: {orders[i].Price}");
+                Console.WriteLine($"Стоимость тура: {orders[i].Price}");
             }
         }
 
@@ -160,7 +160,7 @@ namespace pplication
             }
             else if (!decimal.TryParse(input, out result))
             {
-                Console.WriteLine("Invalid input. Enter a valid decimal value.");
+                Console.WriteLine("Неверный ввод. Введите допустимое десятичное значение.");
                 result = GetDecimalInput(fieldName, defaultValue);
             }
 
@@ -169,7 +169,7 @@ namespace pplication
 
         private static List<string> GetAdditionalParticipants(List<string> defaultValue = null)
         {
-            Console.Write("Additional participants (comma-separated): ");
+            Console.Write("Дополнительные участники (через запятую): ");
 
             string input = Console.ReadLine();
 
@@ -193,7 +193,7 @@ namespace pplication
             }
             catch (Exception)
             {
-                // Ignore errors and start with an empty list
+                // Игнорируйте ошибки и начинайте с пустого списка
             }
         }
 
@@ -206,7 +206,7 @@ namespace pplication
         private static void SaveAndExit()
         {
             SaveOrders();
-            Console.WriteLine("\nOrders saved successfully. Press any key to exit...");
+            Console.WriteLine("\nЗаказы успешно сохранены. Нажмите любую клавишу для выхода...");
             Console.ReadKey();
             Environment.Exit(0);
         }

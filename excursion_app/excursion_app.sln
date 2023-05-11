@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.33530.505
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "excursion_app", "excursion_app.csproj", "{ED668891-BD0E-4D7A-B563-3D2A59BEC28A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ED668891-BD0E-4D7A-B563-3D2A59BEC28A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED668891-BD0E-4D7A-B563-3D2A59BEC28A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED668891-BD0E-4D7A-B563-3D2A59BEC28A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED668891-BD0E-4D7A-B563-3D2A59BEC28A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {406746F9-D068-4D72-A2F0-85C2D5B2F5D5}
+	EndGlobalSection
+EndGlobal
