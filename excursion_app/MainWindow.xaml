@@ -5,25 +5,34 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:excursion_app"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="350">
+        Title="MainWindow"  Background="AliceBlue" Height="450" Width="350" Opacity="1">
 
-    <Viewbox Stretch="Uniform">
+    <Viewbox Stretch="Uniform" >
+
         <StackPanel Orientation="Vertical" Height="Auto" Width="Auto">
 
-            <ListBox Height="283" x:Name="mainList" d:ItemsSource="{d:SampleData ItemCount=5}" KeyDown="mainList_KeyDown" SelectionChanged="mainList_SelectionChanged" Width="253">
+            <ListBox Height="283" x:Name="mainList" d:ItemsSource="{d:SampleData ItemCount=5}" KeyDown="mainList_KeyDown" SelectionChanged="mainList_SelectionChanged" Width="253" Background="#FFE6DDF4">
 
             </ListBox>
 
-            <Grid Height="55" VerticalAlignment="Bottom"  Grid.RowSpan="2">
+            <Grid Height="55"  VerticalAlignment="Bottom"  Grid.RowSpan="2" Background="AliceBlue">
 
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition></ColumnDefinition>
                     <ColumnDefinition></ColumnDefinition>
                 </Grid.ColumnDefinitions>
-                <Button x:Name="addItem" Content="Добавить" Click="addItem_Click"    />
-                <Button x:Name="remItem" Content="Удалить" Grid.Column="1" Click="remItem_Click" Foreground="Black" />
-          </Grid>
-         
-          </StackPanel>    
+                <Button x:Name="addItem"  Click="addItem_Click" >
+                    <TextBlock Text="Добавить" FontSize="9" Height="Auto" Width="40" Margin="0,-9,0,-3" TextWrapping="WrapWithOverflow" FontFamily="Impact">
+
+                    </TextBlock>
+                </Button>
+                <Button x:Name="remItem" Grid.Column="1" Click="remItem_Click" Foreground="Black" >
+                    <TextBlock Text="Удалить" FontSize="9" Height="Auto" Width="36" Margin="0,-9,0,-3" TextWrapping="WrapWithOverflow" FontFamily="Impact">
+
+                    </TextBlock>
+                </Button>
+            </Grid>
+
+        </StackPanel>
     </Viewbox>
 </Window>

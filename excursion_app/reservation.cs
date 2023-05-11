@@ -88,7 +88,13 @@ namespace excursion_app
 
         public override string ToString()
         {
-            return new string($"ФИО:{Fio} Паспортные данные: {Pasport} Исходная точка назначения: {Otkyda} \n Конечная точка назначение {Kyda}: Участники тура: {People} Стоимость тура: {Money}");
+            return new string($"ФИО: {Fio} \n" +
+                $"Паспортные данные: {Pasport}\n " +
+                $"Исходная точка назначения: {Otkyda} \n" +
+                $"Конечная точка назначение: {Kyda}\n" +
+                $"Участники тура:  {People}\n" +
+                $"Стоимость тура:  {Money}");
+
         }
     }
 }

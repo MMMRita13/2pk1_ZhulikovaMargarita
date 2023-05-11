@@ -14,6 +14,8 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.IO;
+using Newtonsoft.Json;
 
 namespace excursion_app
 {
@@ -39,10 +41,16 @@ namespace excursion_app
                 reservations.Add(reservation);
             };
 
+            string filename = "reservation.json";
+            File.WriteAllText(filename, JsonConvert.SerializeObject(reservations));
+
         }
 
         private void remItem_Click(object sender, RoutedEventArgs e)
         {
+            
+            reservations.RemoveAt(1);    
+
         }
 
         private void mainList_KeyDown(object sender, KeyEventArgs e)
