@@ -32,7 +32,6 @@
                     </TextBlock>
                 </Button>
             </Grid>
-
         </StackPanel>
     </Viewbox>
 </Window>
