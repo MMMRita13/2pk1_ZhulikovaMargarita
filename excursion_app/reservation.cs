@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
+using System.Text.Json;
 using System.Threading.Tasks;
 
 namespace excursion_app
@@ -96,5 +98,15 @@ namespace excursion_app
                 $"Стоимость тура:  {Money}");
 
         }
+        public void Save()
+        {
+            string jsonString = JsonSerializer.Serialize(ToString, new JsonSerializerOptions { WriteIndented = true });
+            using (StreamWriter sw = new StreamWriter(jsonString))
+            {
+                sw.WriteLine(jsonString);
+            }
+
+        }
+          
     }
 }

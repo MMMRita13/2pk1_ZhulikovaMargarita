@@ -5,31 +5,44 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:excursion_app"
         mc:Ignorable="d"
-        Title="MainWindow"  Background="AliceBlue" Height="450" Width="350" Opacity="1">
+        Title="MainWindow"  Background="AliceBlue" Height="499" Width="379" Opacity="1">
 
     <Viewbox Stretch="Uniform" >
 
-        <StackPanel Orientation="Vertical" Height="Auto" Width="Auto">
+        <StackPanel>
 
-            <ListBox Height="283" x:Name="mainList" d:ItemsSource="{d:SampleData ItemCount=5}" KeyDown="mainList_KeyDown" SelectionChanged="mainList_SelectionChanged" Width="253" Background="#FFE6DDF4">
-
-            </ListBox>
-
-            <Grid Height="55"  VerticalAlignment="Bottom"  Grid.RowSpan="2" Background="AliceBlue">
-
+            <TextBox TextWrapping="Wrap" Text="!!!Заказ экскурионного тура!!!" Background="#FFE6DDF4" FontFamily="Bodoni MT Black" FontWeight="Bold" FontSize="16">
+                <TextBox.Foreground>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="#FF7300EB"/>
+                        <GradientStop Color="#FFAB7FD9" Offset="1"/>
+                    </LinearGradientBrush>
+                </TextBox.Foreground>
+            </TextBox>
+            <DataGrid x:Name="mainList" KeyDown="mainList_KeyDown" SelectionChanged="mainList_SelectionChanged" AutoGenerateColumns="False"  Background="#FFE6DDF4" Height="400">
+                <DataGrid.Columns>
+                    <DataGridTextColumn Header="ФИО" Binding="{Binding Fio}" Width="60"/>
+                    <DataGridTextColumn Header="Паспорт" Binding="{Binding Pasport}" Width="60"/>
+                    <DataGridTextColumn Header="Откуда" Binding="{Binding Otkyda}" Width="50"/>
+                    <DataGridTextColumn Header="Куда" Binding="{Binding Kyda}" Width="50"/>
+                    <DataGridTextColumn Header="Участники" Binding="{Binding People}" Width="70"/>
+                    <DataGridTextColumn Header="Цена" Binding="{Binding Money}" Width="60"/>
+                </DataGrid.Columns>
+            </DataGrid>
+            <Grid  Grid.RowSpan="3" Background="AliceBlue">
                 <Grid.ColumnDefinitions>
-                    <ColumnDefinition></ColumnDefinition>
-                    <ColumnDefinition></ColumnDefinition>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
                 </Grid.ColumnDefinitions>
                 <Button x:Name="addItem"  Click="addItem_Click" >
-                    <TextBlock Text="Добавить" FontSize="9" Height="Auto" Width="40" Margin="0,-9,0,-3" TextWrapping="WrapWithOverflow" FontFamily="Impact">
-
-                    </TextBlock>
+                    <TextBlock Text="Добавить" FontSize="9" Height="Auto" Width="40" Margin="0,-9,0,-3" TextWrapping="WrapWithOverflow" FontFamily="Impact"/>
                 </Button>
-                <Button x:Name="remItem" Grid.Column="1" Click="remItem_Click" Foreground="Black" >
-                    <TextBlock Text="Удалить" FontSize="9" Height="Auto" Width="36" Margin="0,-9,0,-3" TextWrapping="WrapWithOverflow" FontFamily="Impact">
-
-                    </TextBlock>
+                <Button x:Name="remItem" Grid.Column="2" Click="remItem_Click" Foreground="Black" >
+                    <TextBlock Text="Удалить" FontSize="9" Height="Auto" Width="36" Margin="0,-9,0,-3" TextWrapping="WrapWithOverflow" FontFamily="Impact"/>
+                </Button>
+                <Button x:Name="Item" Grid.Column="1" Click="Save" Width="130">
+                    <TextBlock Text="        Сохранить" Height="Auto" Width="90" Margin="0,-9,0,-3" TextWrapping="WrapWithOverflow" FontFamily="Impact" FontWeight="Bold"/>
                 </Button>
             </Grid>
         </StackPanel>

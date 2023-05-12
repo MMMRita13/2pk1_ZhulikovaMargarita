@@ -8,29 +8,60 @@ namespace pz_22
 {
     class Invoice
     {
-        public Guid Id;
-        public static DateTime basedate = new DateTime(0001, 01, 01);
-        public static int basecount = 0;
-        public static int baseprice = 0;
-        public DateTime date;
-        public string product;
-        public int count;
-        public int price;
-        public float NDS;
-        public static int counter = 0;
-        public Invoice()
+        private static int totalInvoicesCount; // Статическое поле для подсчета количества всех накладных
+
+        public string ID { get; private set; } // Автосвойство для ID
+        public DateTime Date
         {
-            this.product = product;
-            this.count = count;
-            this.price = price;
+            get { return date; }
+            set
+            {
+                if (value <= DateTime.Now)
+                    date = value;
+                else
+                    Console.WriteLine("Дата проведения накладной не может быть позже текущего дня.");
+            }
+        }
+        public string Product { get; set; } // Автосвойство для наименования товара
+        public int Count { get; set; } // Автосвойство для количества единиц товара
+        public decimal Price { get; set; } // Автосвойство для стоимости единицы товара
+        public decimal NDS { get; set; } // Автосвойство для значения НДС
+
+        public Invoice(string ID, DateTime date, string product, int count, decimal price, decimal NDS = 0)
+        {
+            this.ID = ID;
+            Date = date;
+            Product = product;
+            Count = count;
+            Price = price;
             this.NDS = NDS;
-            this.date = date;
-            counter++;
+            totalInvoicesCount++; // Увеличиваем счетчик при создании новой накладной
         }
-        public static void Counter1(int counter)
+
+        public void PrintInfo()
         {
-            Console.WriteLine("Количество накладных " + counter);
+            Console.WriteLine();
+            Console.WriteLine("Информация о счете в приложении");
+            Console.WriteLine($"ID: {ID}");
+            Console.WriteLine($"Дата проведения накладной: {Date}");
+            Console.WriteLine($"Наименование товара: {Product}");
+            Console.WriteLine($"Количество единиц товара: {Count}");
+            Console.WriteLine($"Стоимость единицы товара (руб): {Price}");
+
+            Console.WriteLine();
         }
+
+        public decimal GetFullPrice()
+        {
+            decimal totalPrice = Count * Price;
+            decimal totalPriceWithNDS = totalPrice + totalPrice * NDS;
+            return totalPriceWithNDS;
+        }
+
+        public static void PrintTotalInvoicesCount()
+        {
+            Console.WriteLine($"Стоимость с учетом НДС (руб): {totalInvoicesCount}");
+    }
     }
     
 }

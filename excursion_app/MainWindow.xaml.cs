@@ -16,6 +16,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.IO;
 using Newtonsoft.Json;
+using System.Text.Json;
 
 namespace excursion_app
 {
@@ -24,13 +25,16 @@ namespace excursion_app
     /// </summary>
     public partial class MainWindow : Window
     {
-        private ObservableCollection<Reservation> reservations = new ObservableCollection<Reservation>();
-
+        public static string PathJson = File.ReadAllText("reservation.json");
+        private ObservableCollection<Reservation>? reservations = JsonConvert.DeserializeObject<ObservableCollection<Reservation>>(PathJson);
         public MainWindow()
         {
             InitializeComponent();
+            
             mainList.ItemsSource = reservations;
         }
+
+        
 
         private void addItem_Click(object sender, RoutedEventArgs e)
         {
@@ -41,8 +45,18 @@ namespace excursion_app
                 reservations.Add(reservation);
             };
 
-            string filename = "reservation.json";
-            File.WriteAllText(filename, JsonConvert.SerializeObject(reservations));
+        }
+
+        private void Save(object sender, RoutedEventArgs e)
+        {
+            string jsonString = System.Text.Json.JsonSerializer.Serialize(reservations, new JsonSerializerOptions { WriteIndented = true });
+            string PathJson = "reservation.json";
+            File.WriteAllText(PathJson, jsonString);
+            /*using (StreamWriter sw = new StreamWriter(jsonString))
+            {
+                sw.WriteLine(jsonString);
+            }*/
+           
 
         }
 
@@ -59,11 +73,6 @@ namespace excursion_app
             {
                 reservations.RemoveAt(mainList.SelectedIndex);
             }
-        }
-
-        private void mainList_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-
         }
     }
 }

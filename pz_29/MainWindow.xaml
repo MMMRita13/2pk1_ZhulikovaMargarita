@@ -1,0 +1,17 @@
+﻿<Window x:Class="pz_29.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:pz_29"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid Background="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}">
+        <Button Content="Skip A Day" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-12.341,4.311" Width="184" Height="121" Margin="292,212,0,0" Background="#FF19821B" Click="Skip_A_Day"/>
+        <Button Content="Put" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-12.341,4.311" Width="184" Height="121" Margin="569,33,0,0" Background="#FF19821B" Click="AddSumHandler"/>
+        <Button Content="Withdraw" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-12.341,4.311" Width="184" Height="121" Margin="292,33,0,0" Background="#FF19821B" Click="WithdrawSumHandler"/>
+        <Button Content="Exit" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-12.341,4.311" Width="184" Height="121" Margin="569,212,0,0" Background="#FF19821B" Click="Exit"/>
+        <Button Content="CloseAccount" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-12.341,4.311" Width="184" Height="121" Margin="41,212,0,0" Background="#FF19821B" Click="CloseAccountHandler"/>
+        <Button Content="OpenAccount" HorizontalAlignment="Left" Margin="41,33,0,0" VerticalAlignment="Top" RenderTransformOrigin="-12.341,4.311" Width="184" Height="121" Background="#FF19821B" Click="OpenAccountHandler"/>
+    </Grid>
+</Window>

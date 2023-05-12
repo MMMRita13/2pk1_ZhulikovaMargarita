@@ -4,88 +4,17 @@
     {
         static void Main(string[] args)
         {
-            Invoice invoice = new Invoice();
+            Invoice invoice1 = new Invoice("001", DateTime.Now, "Product 1", 5, 10.5m);
+            Invoice invoice2 = new Invoice("002", DateTime.Now, "Product 2", 10, 20.75m, 0.2m);
+            Invoice invoice3 = new Invoice("003", DateTime.Now, "Product 3", 3, 15.0m);
 
-            invoice.Id = Guid.NewGuid();
-            Console.WriteLine("Введите дату");
-            invoice.date = DateTime.Parse(Console.ReadLine());
-            if (invoice.date > DateTime.Now)
-            {
-                Console.WriteLine("Ошибка");
-                invoice.date = Invoice.basedate;
-            }
+            invoice1.PrintInfo();
+            invoice2.PrintInfo();
+            invoice3.PrintInfo();
 
-            Console.WriteLine("Введите название товара");
-            invoice.product = Console.ReadLine();
+            Invoice.PrintTotalInvoicesCount();
 
-            Console.WriteLine("Введите количество товара");
-            invoice.count = int.Parse(Console.ReadLine());
-            if (invoice.count <= 0)
-            {
-                Console.WriteLine("Неправильно введено количество. Значение установлено 0");
-                invoice.count = Invoice.basecount;
-            }
-
-            Console.WriteLine("Введите цену товара (1шт)");
-            invoice.price = int.Parse(Console.ReadLine());
-            if (invoice.price <= 0)
-            {
-                Console.WriteLine("Неправильно введена цена. Значение установлено 0");
-                invoice.price = Invoice.baseprice;
-            }
-            invoice.NDS = 0.1f;
-
-            Invoice invoice1 = new Invoice();
-
-            invoice1.Id = Guid.NewGuid();
-            Console.WriteLine("Введите дату");
-            invoice1.date = DateTime.Parse(Console.ReadLine());
-            if (invoice1.date > DateTime.Now)
-            {
-                Console.WriteLine("Ошибка");
-                invoice1.date = Invoice.basedate;
-            }
-            Console.WriteLine("Введите название товара");
-            invoice1.product = Console.ReadLine();
-            Console.WriteLine("Введите количество товара");
-            invoice1.count = int.Parse(Console.ReadLine());
-            if (invoice1.count <= 0)
-            {
-                Console.WriteLine("Неправильно введено количество. Значение установлено 0");
-                invoice1.count = Invoice.basecount;
-            }
-            Console.WriteLine("Введите цену товара (1шт)");
-            invoice1.price = int.Parse(Console.ReadLine());
-            if (invoice1.price <= 0)
-            {
-                Console.WriteLine("Неправильно введена цена. Значение установлено 0");
-                invoice1.price = Invoice.baseprice;
-            }
-            invoice1.NDS = 0.1f;
-
-            static Invoice PrintInfo(Invoice invoice)
-            {
-                Console.WriteLine();
-                Console.WriteLine("Информация о счете в приложении");
-                Console.WriteLine($"ID: {invoice.Id}");
-                Console.WriteLine($"Дата проведения накладной: {invoice.date}");
-                Console.WriteLine($"Наименование товара: {invoice.product}");
-                Console.WriteLine($"Количество единиц товара: {invoice.count}");
-                Console.WriteLine($"Стоимость единицы товара (руб): {invoice.price}");
-                Console.WriteLine();
-                return invoice;
-            }
-
-            static void GetFullPrice(Invoice invoice)
-            {
-                Console.WriteLine($"Стоимость с учетом НДС (руб): {invoice.price * (1 + invoice.NDS) * invoice.count}");
-            }
-            PrintInfo(invoice);
-            GetFullPrice(invoice);
-            PrintInfo(invoice1);
-            GetFullPrice(invoice1);
-            Console.WriteLine();
-            Invoice.Counter1(Invoice.counter);
+            Console.ReadLine();
         }
     }
     

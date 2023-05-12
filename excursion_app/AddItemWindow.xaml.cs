@@ -15,9 +15,7 @@ using System.Windows.Shapes;
 
 namespace excursion_app
 {
-    /// <summary>
-    /// Логика взаимодействия для AddItemWindow.xaml
-    /// </summary>
+
     public partial class AddItemWindow : Window
     {
         public delegate void CarInterception(Reservation reservation);
