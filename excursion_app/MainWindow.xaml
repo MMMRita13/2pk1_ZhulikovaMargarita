@@ -19,7 +19,7 @@
                     </LinearGradientBrush>
                 </TextBox.Foreground>
             </TextBox>
-            <DataGrid x:Name="mainList" KeyDown="mainList_KeyDown" SelectionChanged="mainList_SelectionChanged" AutoGenerateColumns="False"  Background="#FFE6DDF4" Height="400">
+            <DataGrid x:Name="mainList" KeyDown="mainList_KeyDown" AutoGenerateColumns="False"  Background="#FFE6DDF4" Height="400">
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="ФИО" Binding="{Binding Fio}" Width="60"/>
                     <DataGridTextColumn Header="Паспорт" Binding="{Binding Pasport}" Width="60"/>

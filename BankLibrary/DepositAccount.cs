@@ -13,7 +13,8 @@ namespace BankLibrary
         }
         protected internal override void Open()
         {
-            base.OnOpened(new AccountEventArgs("Открыт новый депозитный счет!Id счета: " + this._id, this._sum));
+            base.OnOpened(new AccountEventArgs("Открыт новый депозитный счет!Id счета: " +
+            this._id, this._sum));
         }
         public override void Put(decimal sum)
         {
@@ -28,7 +29,7 @@ namespace BankLibrary
                 return base.Withdraw(sum);
             else
                 base.OnWithdrawed(new AccountEventArgs("Вывести средства можно только после 30-ти дневного периода", 0));
-        return 0;
+            return 0;
         }
         protected internal override void Calculate()
         {

@@ -33,7 +33,7 @@ namespace BankLibrary
             }
             if (newAccount == null)
                 throw new Exception("Ошибка создания счета");
-            // добавляем новый счет в массив счетов
+            // добавляем новый счет в массив счетов 
             if (accounts == null)
                 accounts = new T[] { newAccount };
             else
@@ -134,5 +134,4 @@ namespace BankLibrary
         Ordinary,
         Deposit
     }
-
 }

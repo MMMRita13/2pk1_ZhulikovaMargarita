@@ -6,12 +6,18 @@
         xmlns:local="clr-namespace:pz_29"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid Background="{DynamicResource {x:Static SystemColors.DesktopBrushKey}}">
-        <Button Content="Skip A Day" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-12.341,4.311" Width="184" Height="121" Margin="292,212,0,0" Background="#FF19821B" Click="Skip_A_Day"/>
-        <Button Content="Put" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-12.341,4.311" Width="184" Height="121" Margin="569,33,0,0" Background="#FF19821B" Click="AddSumHandler"/>
-        <Button Content="Withdraw" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-12.341,4.311" Width="184" Height="121" Margin="292,33,0,0" Background="#FF19821B" Click="WithdrawSumHandler"/>
-        <Button Content="Exit" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-12.341,4.311" Width="184" Height="121" Margin="569,212,0,0" Background="#FF19821B" Click="Exit"/>
-        <Button Content="CloseAccount" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-12.341,4.311" Width="184" Height="121" Margin="41,212,0,0" Background="#FF19821B" Click="CloseAccountHandler"/>
-        <Button Content="OpenAccount" HorizontalAlignment="Left" Margin="41,33,0,0" VerticalAlignment="Top" RenderTransformOrigin="-12.341,4.311" Width="184" Height="121" Background="#FF19821B" Click="OpenAccountHandler"/>
+    <Grid Background="#FF5F0BA3">
+        <Button Content="Пропустить" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-12.341,4.311" Width="92" Height="85" Margin="41,170,0,0" Background="#FFB69DFE" Click="Skip_A_Day"/>
+        <Button Content="Пополнить" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-12.341,4.311" Width="92" Height="85" Margin="666,33,0,0" Background="#FFB69DFE" Click="AddSumHandler"/>
+        <Button Content="Снять" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="-12.341,4.311" Width="92" Height="85" Margin="666,0,0,0" Background="#FFB69DFE" Click="WithdrawSumHandler"/>
+        <Button Content="Выйти" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-12.341,4.311" Width="92" Height="85" Margin="666,315,0,0" Background="#FFB69DFE" Click="Exit"/>
+        <Button Content="Закрыть счет" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="-12.341,4.311" Width="92" Height="85" Margin="41,310,0,0" Background="#FFB69DFE" Click="CloseAccountHandler"/>
+        <Button Content="Открыть счет" HorizontalAlignment="Left" Margin="41,33,0,0" VerticalAlignment="Top" RenderTransformOrigin="-12.341,4.311" Width="92" Height="85" Click="OpenAccountHandler">
+            <Button.Background>
+                <SolidColorBrush Color="#FFB69DFE"/>
+            </Button.Background>
+        </Button>
+        <Image HorizontalAlignment="Left" Source="/cat.jpg" Height="242" Margin="201,76,0,0" VerticalAlignment="Top" Width="414">
+        </Image>
     </Grid>
 </Window>

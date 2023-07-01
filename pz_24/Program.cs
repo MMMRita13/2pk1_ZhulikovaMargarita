@@ -1,10 +1,12 @@
-﻿namespace pz_24
+﻿using Microsoft.VisualBasic;
+
+namespace pz_24
 {
     class Invoice : ICloneable
     {
         private static int totalInvoicesCount;
 
-        public string ID { get; private set; }
+        public string ID { get; set; }
         public DateTime Date { get; set; }
         public string Product { get; set; }
         public int Count { get; set; }
@@ -21,7 +23,10 @@
             this.NDS = NDS;
             totalInvoicesCount++;
         }
-
+        public Invoice() 
+        {
+            totalInvoicesCount++;
+        }
         public void PrintInfo()
         {
             Console.WriteLine("Информация о счете в приложении");
@@ -56,12 +61,17 @@
         public string DeliveryPerson { get; set; }
         public string VehicleNumber { get; set; }
 
-        public LandingInvoice(string ID, DateTime date, string product, int count, decimal price, decimal NDS,
-                              string deliveryPerson, string vehicleNumber)
-            : base(ID, date, product, count, price, NDS)
+        public LandingInvoice(string id, DateTime ddate, string product, int count, decimal price, decimal NDS,string deliveryPerson, string vehicleNumber)
+           
         {
-            DeliveryPerson = deliveryPerson;
-            VehicleNumber = vehicleNumber;
+            this.ID = id;
+            this.Date = ddate;
+            this.Product = product;
+            this.Count = count;
+            this.Price = price;
+            this.NDS = NDS;
+            this.DeliveryPerson = deliveryPerson;
+            this.VehicleNumber = vehicleNumber;
         }
 
         public void PrintInfo()
@@ -79,12 +89,10 @@
         {
             static void Main()
             {
-                LandingInvoice landingInvoice1 = new LandingInvoice("001", DateTime.Now, "Product 1", 5, 10.5m, 0,
-                                                                    "John Doe", "ABC123");
-                LandingInvoice landingInvoice2 = new LandingInvoice("002", DateTime.Now, "Product 2", 10, 20.75m, 0.2m,
-                                                                    "Jane Smith", "XYZ789");
-                LandingInvoice landingInvoice3 = new LandingInvoice("003", DateTime.Now, "Product 3", 3, 15.0m, 0.1m,
-                                                                    "Mike Johnson", "DEF456");
+                LandingInvoice landingInvoice1 = new LandingInvoice("001", DateTime.Now, "Product 1", 5, 10.5m, 0, "Серов Антон", "ABC123");
+                LandingInvoice landingInvoice2 = new LandingInvoice("002", DateTime.Now, "Product 2", 10, 20.75m, 0.2m, "Иванов Дмитрий", "XYZ789");
+                LandingInvoice landingInvoice3 = new LandingInvoice("003", DateTime.Now, "Product 3", 3, 15.0m, 0.1m, "Сидоров Максим", "DEF456");
+
 
                 landingInvoice1.PrintInfo();
                 Console.WriteLine();

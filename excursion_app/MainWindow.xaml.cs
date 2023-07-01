@@ -51,13 +51,7 @@ namespace excursion_app
         {
             string jsonString = System.Text.Json.JsonSerializer.Serialize(reservations, new JsonSerializerOptions { WriteIndented = true });
             string PathJson = "reservation.json";
-            File.WriteAllText(PathJson, jsonString);
-            /*using (StreamWriter sw = new StreamWriter(jsonString))
-            {
-                sw.WriteLine(jsonString);
-            }*/
-           
-
+            File.WriteAllText(PathJson, jsonString);           
         }
 
         private void remItem_Click(object sender, RoutedEventArgs e)

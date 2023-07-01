@@ -27,11 +27,10 @@ namespace pz_29
         {
             InitializeComponent();
         }
-        
         Bank<Account> bank = new Bank<Account>("ЮнитБанк");
-        
+
         private static void OpenAccount(Bank<Account> bank)
-        {           
+        {
             string input = Interaction.InputBox("Укажите сумму для создания счета:", "Ввод суммы");
             decimal sum = Convert.ToDecimal(input);
             string input2 = Interaction.InputBox("Выберите тип счета: 1. До востребования 2. Депозит");
@@ -86,7 +85,7 @@ namespace pz_29
         {
             MessageBox.Show(e.Message);
             if (e.Sum > 0)
-            MessageBox.Show("Идем тратить деньги");
+                MessageBox.Show("Идем тратить деньги");
         }
 
         private static void CloseAccountHandler(object sender, AccountEventArgs e)
@@ -141,5 +140,3 @@ namespace pz_29
         }
     }
 }
-
-

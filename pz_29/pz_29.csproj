@@ -8,7 +8,17 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="cat.jpg" />
+    <None Remove="images\cat.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\BankLibrary\BankLibrary.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="cat.jpg" />
+    <Resource Include="images\cat.jpg" />
   </ItemGroup>
 
 </Project>
